@@ -1,0 +1,5 @@
+hostname = me-api.jd.com, draw.jdfcloud.com, jdjoy.jd.com, account.huami.com
+# 小米运动获取Token
+http-response ^https:\/\/account\.huami\.com\/v2\/client\/login script-path=https://raw.githubusercontent.com/Er0sion/hundun/master/123.js, requires-body=true, timeout=3600, tag=小米运动获取Token
+# 小米运动
+cron "15 17 * * *" script-path=https://raw.githubusercontent.com/Er0sion/hundun/master/123.js, tag=小米运动
